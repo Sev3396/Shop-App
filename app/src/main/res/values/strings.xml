@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shop App</string>
+    <string name="search_text">search_field</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_search">Search</string>
+    <string name="product_list">product_list</string>
+    <string name="error">error</string>
+    <string name="error_textField">search_query_error</string>
+    <string name="recently_viewed_products">Recently Viewed Products</string>
+    <string name="clear_all">Clear All</string>
+    <string name="product_details">Product Details</string>
+</resources>
