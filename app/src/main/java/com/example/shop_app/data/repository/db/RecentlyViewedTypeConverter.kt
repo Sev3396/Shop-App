@@ -5,6 +5,7 @@ import androidx.room.TypeConverter
 import com.example.shop_app.domain.model.Product
 import com.google.gson.Gson
 
+// Used to store & retrieve json object in Room Table
 @ProvidedTypeConverter
 class RecentlyViewedTypeConverter {
 

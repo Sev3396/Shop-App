@@ -1,5 +1,7 @@
 package com.example.shop_app.components
 
+
+// Utility class for Global Usage
 object Utils {
 
     const val search_input = "Search for product"
@@ -21,5 +23,6 @@ object Utils {
             Pair(true, "")
     }
 
-    fun Int.toPrice() = "$ $this"
+    // converts Int to String for Price
+    fun Int.toPrice() = " $this"
 }

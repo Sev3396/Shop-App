@@ -20,6 +20,13 @@ import com.example.shop_app.components.Utils.toPrice
 import com.example.shop_app.domain.model.Product
 import com.example.shop_app.ui.theme.Dimensions
 
+/**
+ * Used to create Product Item Card view.
+ * @param product - Defines the space to be added in dp.
+ * @param cardWidth - Defines the width of the Card.
+ * @param onItemClick - Returns product id of clicked item.
+ *
+ */
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun ProductItemCard(
