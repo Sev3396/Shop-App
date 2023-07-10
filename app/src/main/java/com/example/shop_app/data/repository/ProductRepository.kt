@@ -21,7 +21,7 @@ class ProductRepository @Inject constructor(
             emit(Response.Loading())
             val response = api.getProducts(productName).toDomain()
             if (response.total == 0) {
-                emit(Response.Error("No products found for the search!!!"))
+                emit(Response.Error((Utils.ZERO_RESULTS)))
             } else {
                 emit(Response.Success(response))
             }
@@ -37,7 +37,7 @@ class ProductRepository @Inject constructor(
             emit(Response.Loading())
             val response = api.getProductDetails(productId).toDomain()
             if (response.id.toString().isEmpty()) {
-                emit(Response.Error("No products found for the search!!!"))
+                emit(Response.Error(Utils.ZERO_RESULTS))
             } else {
                 emit(Response.Success(response))
             }

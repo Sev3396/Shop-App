@@ -9,4 +9,5 @@
     <string name="recently_viewed_products">Recently Viewed Products</string>
     <string name="clear_all">Clear All</string>
     <string name="product_details">Product Details</string>
+    <string name="no_products">No products found for the search!!!</string>
 </resources>
