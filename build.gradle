@@ -12,10 +12,15 @@ buildscript {
         hilt_navigation = "1.0.0"
         compose_navigation = "2.6.0"
         coil = "2.2.2"
+        kotlin_version = '1.8.0'
     }
 
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+    repositories {
+        mavenCentral()
     }
 
 }

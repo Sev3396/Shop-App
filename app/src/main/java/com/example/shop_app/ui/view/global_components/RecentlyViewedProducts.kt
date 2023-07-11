@@ -19,6 +19,14 @@ import com.example.shop_app.R
 import com.example.shop_app.data.repository.db.entity.RecentlyViewProducts
 import com.example.shop_app.ui.theme.Dimensions
 
+/**
+ * Used to create Recently Viewed Items List view.
+ * @param modifier - Defines the modifiers to be applied for the view.
+ * @param productList - List of RecentlyViewedProducts to populate items.
+ * @param onClearClick - Returns when clear button is clicked.
+ * @param onItemClick - returns product id of clicked item.
+ *
+ */
 @Composable
 fun RecentlyViewedProducts(
     modifier: Modifier,

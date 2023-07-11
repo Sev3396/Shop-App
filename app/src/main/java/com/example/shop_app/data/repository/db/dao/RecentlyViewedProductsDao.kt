@@ -13,19 +13,12 @@ interface RecentlyViewedProductsDao {
     suspend fun insertProduct(product: RecentlyViewProducts)
 
     @Query(
-        """
-        select *
-        from RecentlyViewProducts
-        order by viewTimestamp desc
-        """
+        "SELECT * FROM RecentlyViewProducts ORDER BY viewTimestamp DESC"
     )
     fun getRecentlyViewedProducts(): Flow<List<RecentlyViewProducts>>
 
     @Query(
-        """
-            delete
-            from RecentlyViewProducts
-        """
+        "DELETE FROM RecentlyViewProducts"
     )
     suspend fun clearViewedProducts()
 }

@@ -3,6 +3,7 @@ package com.example.shop_app.ui.theme
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+// Contains Dimensions for Global Usages
 object Dimensions {
     val normal_3: Dp = 3.dp
     val normal_5: Dp = 5.dp

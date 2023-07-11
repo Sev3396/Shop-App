@@ -51,6 +51,5 @@ class ProductRepositoryTest {
         productRepository.execute("bag").collect { response ->
             assertTrue(response is Response.Loading)
         }
-
     }
 }

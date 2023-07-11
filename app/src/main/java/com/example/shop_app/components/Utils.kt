@@ -1,5 +1,7 @@
 package com.example.shop_app.components
 
+
+// Utility class for Global Usage
 object Utils {
 
     const val search_input = "Search for product"
@@ -9,6 +11,7 @@ object Utils {
     const val EMPTY_STRING = ""
     const val DEFAULT_PRODUCT_ID = "1"
     const val db_name = "shop_app_db"
+    const val ZERO_RESULTS = "No products found for the search!!!"
     private const val INVALID_SEARCH = "Can't contain special characters!!!"
     private const val searchRegex = "^[a-zA-Z]*$"
 
@@ -20,5 +23,6 @@ object Utils {
             Pair(true, "")
     }
 
-    fun Int.toPrice() = "$ $this"
+    // converts Int to String for Price
+    fun Int.toPrice() = " $this"
 }
